@@ -19,8 +19,8 @@ with open(output_file, 'w') as file:
             file.write(f"Домен: {domain} - IP адрес: {ip_address}\n")
             print(f"Домен: {domain} - IP адрес: {ip_address}")
         except socket.gaierror:
-            file.write(f"Домен {domain} не может быть разрешен\n")
-            print(f"Домен {domain} не может быть разрешен")
+            file.write(f"Домен {domain} недоступен\n")
+            print(f"Домен {domain} недоступен")
 
     # Получение диапазонов IP-адресов
     ip_ranges = []
